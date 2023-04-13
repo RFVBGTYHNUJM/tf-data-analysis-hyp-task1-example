@@ -17,13 +17,5 @@ def solution(x_success: int,
     f1 = norm.cdf(np.sqrt(y_cnt)
                     * (p1 - alpha)
                     / np.sqrt(p1 * (1 - p1)))
-
-    if f1 > f0 :
-        f = 1
-    else :
-        f = 0
-    
-    # Измените код этой функции
-    # Это будет вашим решением
-    # Не меняйте название функции и её аргументы
-    return f # Ваш ответ, True или False
+  
+    return f1 > f0 # Ваш ответ, True или False
