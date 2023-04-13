@@ -1,6 +1,9 @@
 import pandas as pd
 import numpy as np
-
+from scipy import stats
+import matplotlib.pyplot as plt
+import scipy.stats
+from statsmodels.stats.weightstats import ztest as ztest
 
 chat_id = 813595623 # Ваш chat ID, не меняйте название переменной
 
