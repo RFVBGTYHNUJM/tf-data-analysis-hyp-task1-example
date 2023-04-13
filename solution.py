@@ -1,9 +1,8 @@
 import pandas as pd
 import numpy as np
 from scipy import stats
-import matplotlib.pyplot as plt
 import scipy.stats
-from statsmodels.stats.weightstats import ztest as ztest
+from scipy.stats import norm
 
 chat_id = 813595623 # Ваш chat ID, не меняйте название переменной
 
@@ -21,4 +20,4 @@ def solution(x_success: int,
                     * (p1 - alpha)
                     / np.sqrt(p1 * (1 - p1)))
   
-    return f1 > f0 # Ваш ответ, True или False
+    return f1 > f0 
